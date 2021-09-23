@@ -1,0 +1,14 @@
+server:
+  port: 6668
+spring:
+  activemq:
+    # activemq的broker的url
+    broker-url: tcp://192.168.119.131:61616
+    #用户名和密码
+    user: admin
+    password: admin
+  jms:
+    # 目的地是queue还是topic,false(默认)=queue  true：topic
+    pub-sub-domain: true
+#定义服务上的队列名
+myTopicName: springboot-activemq-Topic
